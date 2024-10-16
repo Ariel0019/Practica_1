@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ nombre }} - Servicio - Coka Quina</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo de Coka Quina" width="100">
+        <h1>La Cascada</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Detalles del Servicio -->
+    <section>
+        <h2>Detalles del Servicio: {{ nombre }}</h2>
+        <p>Aquí puedes agregar una descripción más detallada sobre el servicio {{ nombre }} y explicar cómo beneficia a los clientes.</p>
+        
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

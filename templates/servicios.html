@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Coka Quina</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo de la Empresa" width="100">
+        <h1>La Cascada</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+            </nav>
+        </header>
+
+    <!-- Sección de Servicios -->
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='S1.png') }}" alt="Servicio 1" width="500">
+            <h3>Distribución de Bebidas</h3>
+            <p>Ofrecemos un servicio de distribución eficiente de nuestras bebidas en todo el territorio nacional, garantizando que lleguen frescas a nuestros clientes.</p>
+            <a href="/servicio/distribucion" class="btn">Leer más</a>
+        </div>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='S2.jpg') }}" alt="Servicio 2" width="500">
+            <h3>Eventos y Patrocinios</h3>
+            <p>Participamos activamente en eventos locales, brindando apoyo y patrocinio para promover nuestra cultura y nuestras bebidas.</p>
+            <a href="/servicio/eventos" class="btn">Leer más</a>
+        </div>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='S3.jfif') }}" alt="Servicio 3" width="400">
+            <h3>Consultoría en Bebidas</h3>
+            <p>Ofrecemos asesoramiento a negocios que deseen incluir nuestra línea de productos en su oferta, adaptándonos a sus necesidades.</p>
+            <a href="/servicio/consultoria" class="btn">Leer más</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coka Quina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

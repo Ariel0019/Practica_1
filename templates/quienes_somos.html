@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Coka Quina</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo de la Empresa" width="100">
+        <h1>La Cascada</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Historia -->
+    <section>
+        <h2>Nuestra Historia</h2>
+        <p>Coka Quina es una empresa boliviana fundada en [año de fundación ficticio] con el objetivo de ofrecer refrescos de calidad inspirados en las tradiciones locales. Desde sus inicios, la empresa ha trabajado para capturar los sabores auténticos de Bolivia en cada una de sus bebidas, ofreciendo productos que conectan a las personas con la rica herencia cultural del país.</p>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section>
+        <h2>Misión y Visión</h2>
+        <p><strong>Misión:</strong> Proporcionar bebidas refrescantes de alta calidad que representen la esencia y los sabores tradicionales de Bolivia, mientras promovemos la sostenibilidad y el bienestar de nuestras comunidades.</p>
+        <p><strong>Visión:</strong> Convertirnos en la marca de refrescos preferida en Bolivia, reconocida por nuestra autenticidad, calidad y compromiso con el medio ambiente y el desarrollo social.</p>
+    </section>
+
+    <!-- Equipo de Trabajo -->
+    <section>
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="equipo">
+            <div class="miembro">
+                
+                <h3>Juan Pérez</h3>
+                <p>Gerente General</p>
+            </div>
+            <div class="miembro">
+               
+                <h3>María Gómez</h3>
+                <p>Jefa de Marketing</p>
+            </div>
+            <div class="miembro">
+               
+                <h3>Carlos López</h3>
+                <p>Director de Producción</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coka Quina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

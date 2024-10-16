@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mi Empresa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Logotipo y nombre de la empresa -->
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo de la Empresa" width="100">
+        <h1>La Cascada</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Descripción breve del producto o servicio -->
+    <section>
+        <h2>Bienvenido a Mi Empresa</h2>
+        <p>Bienvenidos a mi empresa es una empresa de refrescos de bolivia llamada la Cascada</p>
+    </section>
+
+    <!-- Testimonios de clientes -->
+    <section>
+        <h2>Testimonios</h2>
+        <blockquote>"Excelente servicio, muy satisfecho con los resultados."</blockquote>
+        <p>- Juan Pérez, cliente</p>
+    </section>
+
+    <!-- Ventajas del producto o servicio -->
+    <section>
+        <h2>Ventajas</h2>
+        <ul>
+            <li>Alta calidad en todos nuestros productos.</li>
+            
+            <li>Precios competitivos en el mercado.</li>
+        </ul>
+    </section>
+
+    <!-- Botones de llamada a la acción -->
+    <section>
+        <h2>¿Listo para comenzar?</h2>
+        <a href="/contacto" class="btn">Contáctanos</a>
+        <a href="/servicios" class="btn">Ver Servicios</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

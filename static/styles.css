@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.equipo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.miembro {
+    text-align: center;
+}
+
+.miembro img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.servicio {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.servicio img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f8b400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.noticia {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+}
+
+.noticia img {
+    border-radius: 5px;
+    width: 150px;
+}
+
+.noticia h3 {
+    margin-top: 0;
+}
+
+.noticia p {
+    margin: 0;
+    color: #555;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #f8b400;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    background-color: #f8b400;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-contacto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+

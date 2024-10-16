@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Coka Quina</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo de Coka Quina" width="100">
+        <h1>La Cascada</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section>
+        <h2>Contáctanos</h2>
+        <form action="/contacto" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        
+        <div class="info-contacto">
+            <h3>Información de Contacto</h3>
+            <p><strong>Dirección:</strong> Calle 123, La Paz, Bolivia</p>
+            <p><strong>Teléfono:</strong> +591 123-456-789</p>
+            <p><strong>Correo:</strong> contacto@cokakina.com.bo</p>
+        </div>
+        
+        <div class="mapa">
+            <h3>Nuestra Ubicación</h3>
+            <!-- Mapa ficticio, puedes sustituirlo por un código de Google Maps embebido -->
+            <img src="{{ url_for('static', filename='mapaa.jfif') }}" alt="Mapa de ubicación" width="400">
+            <!-- O usa el código embebido de Google Maps (ejemplo) -->
+            <!--
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.870653540373!2d-74.00601528459486!3d40.71277527933086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDBiNDMnNTQuMyJOIDc0wrAwMSczMy4wIlc!5e0!3m2!1ses!2sbo!4v1615291765571!5m2!1ses!2sbo"
+                width="400"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+            -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coka Quina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash-messages">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+</html>
